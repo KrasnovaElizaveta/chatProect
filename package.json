@@ -1,0 +1,24 @@
+{
+  "name": "chatproect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "static-server": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start:server": "./node_modules/.bin/static-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrasnovaElizaveta/chatProect.git"
+  },
+  "author": "Liza Krasnova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrasnovaElizaveta/chatProect/issues"
+  },
+  "homepage": "https://github.com/KrasnovaElizaveta/chatProect#readme"
+}

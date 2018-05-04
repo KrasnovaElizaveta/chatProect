@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    background: aliceblue;
+}
+
+.js-app {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.chat {
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    background: azure;
+    overflow: auto;
+}
+
+.chat__message {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 2;
+}
