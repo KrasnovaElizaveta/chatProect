@@ -1,7 +1,8 @@
 'use strict';
 
-class Form {
-    constructor({el, onSubmit}) {//
+/*
+export class Form {
+    constructor({el, onSubmit}) {
         this.el = el;
         this.cb = onSubmit;
 
@@ -29,7 +30,32 @@ class Form {
         const el = event.target;
         const message = el.querySelector('[name="message"]').value;
         const name = el.querySelector('[name="name"]').value;
-        this.cb(name,message);
-        el.reset()
+        this.cb(name, message);
+        el.reset();
+    }
+}
+*/
+export class Form {
+    constructor({el, onSubmit}) {
+        this.el = el;
+
+        this.el.addEventListener('submit', this._onSubmit.bind(this));
+        this.onSubmit = onSubmit;
+    }
+
+    render() {
+        this.el.innerHTML = `
+            <form>
+                <textarea></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        `;
+    }
+
+    _onSubmit(event) {
+        event.preventDefault();
+        this.onSubmit({
+            text: event.target.querySelector('textarea').value
+        });
     }
 }

@@ -1,7 +1,8 @@
 #Учебный проект ЧАТ#
 
-#Development#
-...
+##Development##
+
+```
 $ npm install
 $ npm run start:server
-...
+```
