@@ -31,7 +31,6 @@ export class Chat {
     }
 }
 */
-
 const tmpl = window.chatTmpl;
 
 export class Chat {
