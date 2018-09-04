@@ -1,4 +1,4 @@
-#Учебный проект ЧАТ#
+#Chat JS#
 
 ##Development##
 
